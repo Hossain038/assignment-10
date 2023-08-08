@@ -1,0 +1,49 @@
+Step 1: Set Up the Project
+
+Create a New Project Folder:
+Open your terminal and navigate to the directory where you want to create the project folder. Then, run the following command to create a new Next.js project:
+
+bash
+
+npx create-next-app my-nextjs-starter
+Replace my-nextjs-starter with the desired name for your project.
+
+Navigate to the Project Folder:
+Move into the newly created project folder:
+
+bash
+
+cd my-nextjs-starter
+Step 2: Understand the Folder Structure
+
+Next.js projects follow a specific folder structure that helps organize your code and resources effectively. Here's an overview of the key folders and their purposes:
+
+/public:
+This folder contains static assets that are directly accessible to the client, such as images, fonts, and other files. These assets can be referenced in your code using the /public path.
+
+/src (optional):
+While not required, you can create a /src folder to keep your source code organized. By default, Next.js projects use the root directory for source files.
+
+/pages:
+This is a crucial folder in Next.js projects. Each .js or .jsx file in this folder corresponds to a route in your application. For example, pages/index.js corresponds to the root route ("/"), and pages/about.js corresponds to "/about".
+
+/components:
+This folder is used to store reusable React components that can be used across different pages or sections of your application.
+
+/styles:
+You can place your global styles and CSS modules in this folder. Styles defined here are automatically scoped to their respective components or pages.
+
+/public:
+This is where you can place static assets like images, fonts, and other files that will be served directly to the client.
+
+/api (optional):
+If you're using Next.js's API routes, you can create endpoints in this folder. Each .js file here represents a serverless API route.
+
+Step 3: Run the Project
+
+After setting up the folder structure, you can start the development server:
+
+bash
+
+npm run dev
+This will start the development server, and you can access your Next.js app by opening your web browser and navigating to http://localhost:3000.
